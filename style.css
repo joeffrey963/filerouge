@@ -1,1 +1,260 @@
+body {
+    margin: 0;
+    background-image: url(images/macarons.jpg);
+    background-attachment: fixed;
+}
 
+
+header {
+    background-color: blue;
+    width: 100%;
+}
+
+.entete {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Times New Roman', Times, sans-serif;
+    font-size: 600%;
+    color: black;
+}
+
+h2 {
+    font-size: 200%;
+}
+
+h3{
+    text-decoration: underline;
+}
+.logo {
+    float: left;
+    margin-left:5%;
+    margin-top:4%;
+}
+
+
+/*Nav background*/
+.topnav {
+
+    background-color: blue;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-bottom: 2%;
+}
+
+/*Dans la nav*/
+.topnav a {
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.container {
+    min-height: 535px;
+}
+
+.corpus {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+}
+
+.themes {
+    width: 20%;
+    float: left;
+    background-color: blue;
+}
+
+.themes p {
+    font-size: 150%;
+    margin-left: 10%;
+}
+
+h3 {
+    color: white;
+    text-align: center;
+    font-size: 240%;
+}
+
+
+#themes {
+    background-size: 100%;
+    height: 8%;
+    border-radius: 15px;
+    width: 90%;
+    margin: 5%;
+}
+
+
+.ligne {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: auto;
+}
+
+.images {
+    height: 50%;
+}
+
+div#section {
+    width: 75%;
+    margin-left: 5%;
+}
+
+.section {
+    display: inline-block;
+    justify-content: space-around;
+    width: 100%;
+    justify-content: space-around;
+    background-color: blue;
+    padding-top:2.5%;
+    padding-bottom:2.5%;
+}
+
+.img {
+    max-width: 80%;
+    margin-left: 10%;
+    padding: 5%;
+    border-radius: 40px;
+}
+
+
+footer {
+    height: 100%;
+    background-color: blue;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+
+
+
+@media all and (min-width: 320px) and (max-width: 736px) {
+    h1 {
+        font-size: 300%;
+        text-align: left;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .logo {
+        display: flex;
+        justify-content: center;
+        float:left;
+    }
+
+    .topnav {
+        display: flex;
+        flex-flow: row;
+        justify-content: flex-end;
+        margin-bottom: 5%;
+    }
+
+    .corpus {
+        display: flex;
+        flex-flow: column;
+        margin-bottom: 6%;
+    }
+
+    .themes {
+        display: flex;
+        flex-flow: column;
+        width:100%;
+        text-align: center;
+    }
+
+    #themes
+    {
+        width:95%;
+        text-align: center;
+    }
+    div#section {
+        display: flex;
+        width: 100%;
+        padding-top: 3%;
+        margin: 0
+    }
+
+    .ligne {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        margin-left: -4%;
+    }
+    
+    .img
+    {
+        max-width: 60%;
+    }
+
+    .images
+    {
+        text-align:center;
+    }
+
+}
+
+/*media pour iPads*/
+@media all and (min-width: 768px) and (max-width: 1400px) {
+    h1 {
+        font-size: 400%;
+        text-align: center;
+        margin-left: 10%;
+    }
+
+    h3{
+        font-size:200%;
+    }
+    .corpus {
+        display: inline-block;
+        flex-flow: column;
+        margin-bottom: 5%;
+    }
+
+    .themes {
+        display: flex;
+        flex-flow: column;
+        text-align: left;
+        width: 25%;
+        padding-bottom:5%;
+    }
+
+    div#section {
+        display: flex;
+        float: right;
+        width: 70%;
+        margin: 0
+    }
+    .section
+    {
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    .ligne {
+        display: flex;
+        flex-flow: column nowrap;
+        margin-left:-2%;
+    }
+
+    .img
+    {
+        width: 80%;
+    }
+
+    .images
+    {
+        width:40%;
+        display: flex;
+        flex-flow: row nowrap
+    }
+
+}
