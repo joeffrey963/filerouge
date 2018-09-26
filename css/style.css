@@ -1,0 +1,172 @@
+body {
+    margin: 0;
+    background-color: rgb(244, 244, 245); 
+}
+
+.container-fluid{
+    min-height: 150px;
+}
+
+.header {
+    background-color: rgb(49, 88, 196);
+}
+
+.logo {
+    text-align: center;
+    font-size: 180%;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 1%;
+}
+
+.nom {
+    padding-left: 6%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 180%;
+    color: black;
+}
+
+/*Nav background*/
+.topnav {
+    background-color: rgb(49, 88, 196);
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 1%;
+}
+
+/*Dans la nav*/
+.topnav a {
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/*Aside*/
+.aside {
+    height: auto;
+    margin-top: 2%;
+    background-color: rgb(49, 88, 196);
+}
+
+h3 {
+    width: 100%;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 130%;
+    text-decoration: underline;
+    padding-bottom: 7%;
+    margin-top: -3%;
+    margin-left: 4%;
+}
+/*boutons*/
+ul li {
+    list-style: none;
+    text-decoration: none;
+    padding-top: 15%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 120%;
+}
+
+/*Section*/
+section{
+    margin-top: 2.4%;
+    height: auto;
+    text-align: center;
+    margin-left: 2%;
+    background-color: rgb(49, 88, 196);
+    padding-bottom: 7%;
+   
+}
+
+.vitrine{
+    display: inline-block;
+    background-color: transparent;
+}
+
+.item{
+    margin-top: 7%;
+    margin-left: 1%;
+    width: 250px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+footer{
+    width: 100%;
+    bottom: 0;
+    margin-top: 2%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 220%;
+    background-color: rgb(49, 88, 196);
+    text-align: center;
+}
+
+p{
+    margin: 0px;
+}
+
+/*responsive*/
+@media all and (min-width: 320px) and (max-width: 768px){
+    .topnav{
+        display: flex;
+        flex-direction: column;
+    }
+
+    section{
+        width: 100%;
+        margin-left: 0%;
+    }
+
+    .aside{
+        text-align: center;
+        padding-right: 14%;
+    }
+
+    ul li{
+        padding-bottom: 2%;
+    }
+
+    h3{
+        margin-bottom: -7%;
+    }
+
+    p{
+        margin: 0px;
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px){
+    h3{
+        font-size: 90%;
+        margin-left: -20%;
+    }
+
+    .themes{
+        font-size: 100%;
+        margin-left: -20%;
+    }
+
+    p{
+        margin: 0px;
+    }
+}
+
+@media all and (min-width: 1025px) and (max-width: 1440px){
+    h3{
+        font-size: 90%;
+        margin-left: -10%;
+    }
+
+    .themes{
+        margin-left: -10%;
+    }
+
+    p{
+        margin: 0px;
+    }
+}
+
